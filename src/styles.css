@@ -1,0 +1,32 @@
+.button {
+  line-height: 38px;
+  padding: 20px 38px;
+  width: 200px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  color: rgb(12, 11, 11);
+  font-weight: 500;
+  font-size: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.button:before {
+  position: absolute;
+  left: -145px;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: #000;
+  opacity: 0;
+  transform: skew(40deg);
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover:before {
+  left: 120%;
+  opacity: 0.3;
+}
